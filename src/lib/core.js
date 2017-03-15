@@ -4,7 +4,7 @@ const attempts = 3;
 
 const playRound = (round, name, query) => {
   if (round === attempts) {
-    console.log(`Congratulations, ${name}`);
+    console.log(`Congratulations, ${name}!`);
     return;
   }
 

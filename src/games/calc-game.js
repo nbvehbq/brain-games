@@ -22,14 +22,14 @@ const queryProcessor = () => {
   const question = `${left} ${result.operand} ${right}`;
   const correctAnswer = result.result();
   return {
-    question: [question],
+    question,
     correctAnswer: correctAnswer.toString(),
   };
 };
 
 const gameData = {
   rules: 'What is the result of the expression?',
-  queryProcessor: [queryProcessor],
+  queryProcessor,
 };
 
 
