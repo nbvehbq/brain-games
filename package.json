@@ -1,6 +1,6 @@
 {
-  "name": "brain-games",
-  "version": "0.1.0",
+  "name": "nbv_brain-games",
+  "version": "0.2.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,8 @@
     "eslint": "eslint"
   },
   "bin": {
-    "brain-games": "dist/bin/brain-games.js"
+    "brain-games": "dist/bin/brain-games.js",
+    "brain-even": "dist/bin/brain-even.js"
   },
   "keywords": [],
   "author": "nbvehbq@gmail.com",
