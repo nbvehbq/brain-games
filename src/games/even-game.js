@@ -17,6 +17,5 @@ const gameData = {
   queryProcessor: [queryProcessor],
 };
 
-
 export default gameData;
 
