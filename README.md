@@ -8,6 +8,7 @@
 A set of mini-games usually called Brain Games.
 
 ### Installation
-Install package globally ```npm i -g nbv-brain-games```.
+Install package globally ```npm i -g brain-games-nbv```.
 
 [![asciicast](https://asciinema.org/a/eva2vrlwvnhu6nfl69d9wjg58.png)](https://asciinema.org/a/eva2vrlwvnhu6nfl69d9wjg58)
+
