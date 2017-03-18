@@ -10,5 +10,12 @@ A set of mini-games usually called Brain Games.
 ### Installation
 Install package globally ```npm i -g brain-games-nbv```.
 
-[![asciicast](https://asciinema.org/a/eva2vrlwvnhu6nfl69d9wjg58.png)](https://asciinema.org/a/eva2vrlwvnhu6nfl69d9wjg58)
+[![asciicast](https://asciinema.org/a/edvgd96urkfq9er79n59nvx1c.png)](hhttps://asciinema.org/a/edvgd96urkfq9er79n59nvx1c)
 
+### Games list
+1. Even game  ```$ brain-even```
+1. Calc game  ```$ brain-calc```
+1. Gcd game  ```$ brain-gcd```
+1. Balance game  ```$ brain-balance```
+1. Progression game  ```$ brain-progression```
+1. Prime game  ```$ brain-prime```
