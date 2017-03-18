@@ -1,4 +1,5 @@
 import random from '../lib/utils';
+import game from '../lib/core';
 
 const balance = (num) => {
   const len = num.length;
@@ -29,9 +30,8 @@ const queryProcessor = () => {
 };
 
 const gameData = {
-  rules: 'Balance the given number.',
+  rule: 'Balance the given number.',
   queryProcessor,
 };
 
-export default gameData;
-
+export default () => game(gameData);

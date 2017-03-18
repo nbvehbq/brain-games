@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-import { startBalanceGame } from '..';
+import startGame from '../games/balance-game';
 
-startBalanceGame();
-
+startGame();

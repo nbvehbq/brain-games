@@ -1,4 +1,5 @@
 import random from '../lib/utils';
+import game from '../lib/core';
 
 const queryProcessor = () => {
   const left = random(0, 100);
@@ -28,10 +29,8 @@ const queryProcessor = () => {
 };
 
 const gameData = {
-  rules: 'What is the result of the expression?',
+  rule: 'What is the result of the expression?',
   queryProcessor,
 };
 
-
-export default gameData;
-
+export default () => game(gameData);

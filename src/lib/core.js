@@ -24,11 +24,11 @@ Let\`s try again,${name}`);
 
 
 const startGame = (gameData) => {
-  const { rules, queryProcessor } = gameData;
+  const { rule, queryProcessor } = gameData;
 
   console.log('Welcom to the Brain game');
-  if (rules) {
-    console.log(rules);
+  if (rule) {
+    console.log(rule);
   }
 
   const playerName = readLineSync.question('\nMay I have your name? ');

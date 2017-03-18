@@ -1,4 +1,5 @@
 import random from '../lib/utils';
+import game from '../lib/core';
 
 const gcd = (left, right) => {
   if (right === 0) {
@@ -20,9 +21,8 @@ const queryProcessor = () => {
 };
 
 const gameData = {
-  rules: 'Find the greatest common divisor of given numbers.',
+  rule: 'Find the greatest common divisor of given numbers.',
   queryProcessor,
 };
 
-export default gameData;
-
+export default () => game(gameData);

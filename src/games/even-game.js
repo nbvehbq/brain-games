@@ -1,4 +1,5 @@
 import random from '../lib/utils';
+import game from '../lib/core';
 
 const queryProcessor = () => {
   const question = random(0, 100);
@@ -10,9 +11,8 @@ const queryProcessor = () => {
 };
 
 const gameData = {
-  rules: 'Answer "yes" if number even otherwise answer "no".',
+  rule: 'Answer "yes" if number even otherwise answer "no".',
   queryProcessor,
 };
 
-export default gameData;
-
+export default () => game(gameData);
