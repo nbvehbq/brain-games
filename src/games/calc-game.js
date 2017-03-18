@@ -1,5 +1,5 @@
 import random from '../lib/utils';
-import game from '../lib/core';
+import playGame from '../lib/core';
 
 const queryProcessor = () => {
   const left = random(0, 100);
@@ -33,4 +33,4 @@ const gameData = {
   queryProcessor,
 };
 
-export default () => game(gameData);
+export default () => playGame(gameData);

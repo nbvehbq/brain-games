@@ -1,23 +1,31 @@
 import random from '../lib/utils';
-import game from '../lib/core';
+import playGame from '../lib/core';
 
-const makeProgression = (items, d) => {
-  if (items.length === 10) {
-    return items;
-  }
+const progressionLength = 10;
 
-  const last = items[items.length - 1];
+const makeProgression = (start, d) => {
+  const result = [];
 
-  items.push(last + d);
-  return makeProgression(items, d);
+  const iter = (num) => {
+    if (result.length === progressionLength) {
+      return result;
+    }
+
+    const element = (result.length === 0) ? num : num + d;
+    result.push(element);
+
+    return iter(element);
+  };
+
+  return iter(start);
 };
 
 const queryProcessor = () => {
   const start = random(0, 100);
-  const d = random(2, 10);
-  const emptyIndex = random(1, 10);
+  const d = random(2, progressionLength);
+  const emptyIndex = random(1, progressionLength);
 
-  const progression = makeProgression([start], d);
+  const progression = makeProgression(start, d);
   const correctAnswer = progression[emptyIndex];
   progression[emptyIndex] = undefined;
 
@@ -35,4 +43,4 @@ const gameData = {
   queryProcessor,
 };
 
-export default () => game(gameData);
+export default () => playGame(gameData);

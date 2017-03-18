@@ -1,5 +1,5 @@
 import random from '../lib/utils';
-import game from '../lib/core';
+import playGame from '../lib/core';
 
 const isPrime = (num, i) => {
   if (num < 2) return false;
@@ -24,4 +24,4 @@ const gameData = {
   queryProcessor,
 };
 
-export default () => game(gameData);
+export default () => playGame(gameData);
