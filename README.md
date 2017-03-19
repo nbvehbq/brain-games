@@ -10,7 +10,7 @@ A set of mini-games usually called Brain Games.
 ### Installation
 Install package globally ```npm i -g brain-games-nbv```.
 
-[![asciicast](https://asciinema.org/a/edvgd96urkfq9er79n59nvx1c.png)](hhttps://asciinema.org/a/edvgd96urkfq9er79n59nvx1c)
+[![asciicast](https://asciinema.org/a/edvgd96urkfq9er79n59nvx1c.png)](https://asciinema.org/a/edvgd96urkfq9er79n59nvx1c)
 
 ### Games list
 1. Even game  ```$ brain-even```

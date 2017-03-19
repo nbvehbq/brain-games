@@ -4,20 +4,16 @@ import playGame from '../lib/core';
 const progressionLength = 10;
 
 const makeProgression = (start, d) => {
-  const result = [];
-
-  const iter = (num) => {
+  const iter = (num, result) => {
     if (result.length === progressionLength) {
       return result;
     }
 
     const element = (result.length === 0) ? num : num + d;
-    result.push(element);
-
-    return iter(element);
+    return iter(element, result.concat(element));
   };
 
-  return iter(start);
+  return iter(start, []);
 };
 
 const queryProcessor = () => {
