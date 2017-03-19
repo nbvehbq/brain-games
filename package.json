@@ -1,6 +1,6 @@
 {
   "name": "brain-games-nbv",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A set of mini-games usually called Brain Games",
   "main": "index.js",
   "scripts": {
@@ -17,9 +17,12 @@
     "brain-balance": "dist/bin/brain-balance.js",
     "brain-progress": "dist/bin/brain-progression.js",
     "brain-prime": "dist/bin/brain-prime.js"
-
   },
-  "keywords": ["game", "console", "brain"],
+  "keywords": [
+    "game",
+    "console",
+    "brain"
+  ],
   "author": "nbvehbq@gmail.com",
   "license": "ISC",
   "devDependencies": {
